@@ -11,37 +11,49 @@ let result = {
 };
 
 function reset() {
-  let restart = 0;
-  if (homeRender.textContent !== 0) {
-    result.count = restart;
-  } else if (guestRender.textContent !== 0) {
-    result.count2 = restart;
-  }
+  // Reset both scores to zero and update the UI
+  result.count = 0;
+  result.count2 = 0;
+  homeRender.textContent = 0;
+  guestRender.textContent = 0;
+  // Refresh winner/score display
+  updateScoreEl();
 }
 
 function addH() {
-  homeRender.textContent = result.count++;
+  result.count++;
+  homeRender.textContent = result.count;
   updateScoreEl();
 }
 
 function addTwoH() {
-  homeRender.textContent = result.count += 2;
+  result.count += 2;
+  homeRender.textContent = result.count;
+  updateScoreEl();
 }
 
 function addThreeH() {
-  homeRender.textContent = result.count += 3;
+  result.count += 3;
+  homeRender.textContent = result.count;
+  updateScoreEl();
 }
 
 function addG() {
-  guestRender.textContent = result.count2++;
+  result.count2++;
+  guestRender.textContent = result.count2;
+  updateScoreEl();
 }
 
 function addTwoG() {
-  guestRender.textContent = result.count2 += 2;
+  result.count2 += 2;
+  guestRender.textContent = result.count2;
+  updateScoreEl();
 }
 
 function addThreeG() {
-  guestRender.textContent = result.count2 += 3;
+  result.count2 += 3;
+  guestRender.textContent = result.count2;
+  updateScoreEl();
 }
 
 function save() {

@@ -8,35 +8,39 @@
   </head>
   <body>
     <div id="container">
-      <div id="home">
-        <h2>Home</h2>
-        <p id="render-home">0</p>
-        <div id="btn-container">
-          <button onclick="addH()">+1</button>
-          <button onclick="addTwoH()">+2</button>
-          <button onclick="addThreeH()">+3</button>
+      <div id="main">
+        <div id="home">
+          <h2>Home</h2>
+          <p id="render-home">0</p>
+          <div id="btn-container">
+            <button onclick="addH()">+1</button>
+            <button onclick="addTwoH()">+2</button>
+            <button onclick="addThreeH()">+3</button>
+          </div>
         </div>
-      </div>
-      <div id="guest">
-        <h2>Guest</h2>
-        <p id="render-guest">0</p>
-        <div id="btn-container">
-          <button onclick="addG()">+1</button>
-          <button onclick="addTwoG()">+2</button>
-          <button onclick="addThreeG()">+3</button>
+        <div id="guest">
+          <h2>Guest</h2>
+          <p id="render-guest">0</p>
+          <div id="btn-container">
+            <button onclick="addG()">+1</button>
+            <button onclick="addTwoG()">+2</button>
+            <button onclick="addThreeG()">+3</button>
+          </div>
         </div>
-      </div>
-      <div id="results">
-        <button
-          id="reset"
-          onclick="
+        <div id="results">
+          <button id="save" onclick="save()">save</button>
+          <button
+            id="reset"
+            onclick="
             reset()"
-        >
-          Reset
-        </button>
-        <button id="save" onclick="save()">save</button>
-        <p id="score"></p>
-        <p id="winner"></p>
+          >
+            Reset
+          </button>
+          <div id="result-outcome">
+            <p id="score"></p>
+            <p id="winner"></p>
+          </div>
+        </div>
       </div>
     </div>
 

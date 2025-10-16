@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>score game</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="home">
+        <h2>Home</h2>
+        <p id="render-home">0</p>
+        <div id="btn-container">
+          <button onclick="addH()">+1</button>
+          <button onclick="addTwoH()">+2</button>
+          <button onclick="addThreeH()">+3</button>
+        </div>
+      </div>
+      <div id="guest">
+        <h2>Guest</h2>
+        <p id="render-guest">0</p>
+        <div id="btn-container">
+          <button onclick="addG()">+1</button>
+          <button onclick="addTwoG()">+2</button>
+          <button onclick="addThreeG()">+3</button>
+        </div>
+      </div>
+      <div id="results">
+        <button
+          id="reset"
+          onclick="
+            reset()"
+        >
+          Reset
+        </button>
+        <button id="save" onclick="save()">save</button>
+        <p id="score"></p>
+        <p id="winner"></p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
